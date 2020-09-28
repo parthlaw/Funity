@@ -1,5 +1,5 @@
-import React, { useContext, useRef, useState } from "react";
-import { PageHeader, Input } from "antd";
+import React, { useContext, useState } from "react";
+import { Input } from "antd";
 import { connect } from "react-redux";
 import { getSong } from "../Dependencies/Redux/actions";
 import { LocaleContext } from "../Dependencies/Messages/LocaleContext";
@@ -35,9 +35,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 const NavBar = ({ getSong }) => {
   const [locale, setLocale] = useContext(LocaleContext);
-  const nextLocale = locale;
   const [search, setSearch] = useState("");
-  const val = useRef(null);
   const handleSearch = (value) => {
     setSearch(value);
     getSong(value);
@@ -60,7 +58,7 @@ const NavBar = ({ getSong }) => {
           }}
           placeholder="Change Language"
         />
-        {search && locale != "hin" ? (
+        {search && locale !== "hin" ? (
           <h3
             style={{
               color: "white",

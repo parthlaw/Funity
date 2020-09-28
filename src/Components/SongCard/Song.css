@@ -1,6 +1,7 @@
 .container {
   position: relative;
   margin: 20px;
+  color: azure;
 }
 
 .image {
@@ -38,9 +39,17 @@
   justify-content: center;
 }
 .infoIcon {
-  font-size: 40px;
+  font-size: 43px;
   margin-left: 20px;
 }
 .text :hover {
   cursor: pointer;
+  color: bisque;
+}
+a {
+  color: azure;
+}
+a :hover {
+  color: bisque;
+  text-decoration: none;
 }

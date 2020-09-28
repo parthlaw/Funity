@@ -1,8 +1,7 @@
 import React from "react";
-import { Card } from "antd";
 import { CaretRightOutlined, InfoCircleFilled } from "@ant-design/icons";
 import "./Song.css";
-const { Meta } = Card;
+
 const SongCard = ({
   photo,
   name,
@@ -38,7 +37,9 @@ const SongCard = ({
           <div className="text">
             <CaretRightOutlined onClick={songSelector} />
             <div className="infoIcon">
-              <InfoCircleFilled />
+              <a href={artist}>
+                <InfoCircleFilled />
+              </a>
             </div>
           </div>
         </div>

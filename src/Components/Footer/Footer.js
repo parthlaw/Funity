@@ -30,9 +30,9 @@ const Foot = ({ video, songState, showDrawer }) => {
         </div>
       </div>
       <div>
-        {songState.photo != "" ? (
+        {songState.photo !== "" ? (
           <div className="SongImage">
-            <img src={songState.photo} alt="song Image" />
+            <img src={songState.photo} alt="song" />
           </div>
         ) : null}
       </div>

@@ -8,14 +8,14 @@ const SongList = ({ setSongState, video, showDrawer }) => {
   const state = useSelector((state) => state);
   const [cards, setCards] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [cardsPerPage, setCardsPerPage] = useState(5);
+  const [cardsPerPage] = useState(5);
   useEffect(() => {
     console.log(state);
     if (state.song) {
       setCards(state.song.results);
       console.log("cards", cards);
     }
-  }, [state]);
+  }, [state, cards]);
   //Get current posts
   const indexOfLastCard = currentPage * cardsPerPage;
   const indexOfFirstCard = indexOfLastCard - cardsPerPage;

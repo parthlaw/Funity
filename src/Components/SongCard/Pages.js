@@ -1,7 +1,4 @@
-import { Pagination } from "antd";
-import React, { useState } from "react";
-import { useSelector } from "react-redux";
-import SongCard from "./Song";
+import React from "react";
 import "./Pages.css";
 const Pages = ({ totalCards, cardsPerPage, paginate }) => {
   const pageNumbers = [];
