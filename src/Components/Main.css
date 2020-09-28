@@ -1,0 +1,20 @@
+.RowContent {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.ColContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.DivContent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  overflow-x: hidden;
+  margin-left: 4%;
+  transform: perspective(3500px) rotate3d(0, 1, 0, 0deg);
+}
