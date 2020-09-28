@@ -3,7 +3,7 @@ import { create } from "apisauce";
 const api = create({
   baseURL: "https://itunes.apple.com",
   headers: {
-    "Access-Control-Allow-Origin": "https://funity.vercel.app/",
+    "Access-Control-Allow-Origin": "*",
   },
 });
 const callAPI = async (searchString) => {
