@@ -1,5 +1,6 @@
 import React from "react";
 import "./Pages.css";
+
 const Pages = ({ totalCards, cardsPerPage, paginate }) => {
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(totalCards / cardsPerPage); i++) {
